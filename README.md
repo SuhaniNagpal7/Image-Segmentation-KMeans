@@ -19,6 +19,13 @@ python src/image_segmentation.py --image examples/butterfly.png --clusters 4
 - Side-by-side comparison of results
 - Automatic saving of segmented images
 
+## Algorithm
+
+The image segmentation process:
+1. Convert image to RGB and reshape pixels into a 2D array
+2. Apply K-means clustering to group similar colors
+3. Replace each pixel with its cluster center color
+4. Reconstruct and save the segmented image
 
 ## Requirements
 
